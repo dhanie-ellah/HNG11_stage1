@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+
+
+:root{
+  --blue: #b1cbf5
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+  color: white;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+footer, nav{
+  height: 10vh;
+}
+
+section{
+  height: 80vh;
+}
+
+section, nav, footer{
+  padding: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo-holder{
+  width: 12%;
+}
+
+nav .logo-holder .logo{
+  width: 100%;
+}
+
+nav .links{
+  font-size: 15px;
+}
+
+
+hr.below-nav,
+hr.above-footer{
+  border: none;
+  height: 2px;
+  background-color: var(--blue);
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home .home-img-holder{
+  width: 50%;
+}
+
+.home .home-img-holder .home-img{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.home .hero-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home .hero-text div.links{
+  display: flex;
+  gap: 1rem;
+}
+
+.home .hero-text div.links button{
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: white;
+  background: none;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.home .hero-text div.links button:hover{
+  background-color: white;
+} 
+
+.home .hero-text div.links button:hover a{
+  color: black;
+} 
+
+footer p{
+  font-size: 12px;
+  text-align: center;
+  color: var(--blue);
+}
+
+footer p a{
+  color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  section, nav, footer{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  nav .logo-holder{
+    width: 35%;
+  }
+  
+  nav .links{
+    font-size: 12px;
+  }
+  
+  .home{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .home .hero-text{
+    gap: 0.5rem;
+  }
+}
